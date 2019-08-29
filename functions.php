@@ -139,8 +139,6 @@ function gl_tag_cloud_widget($args) {
 }
 add_filter('widget_tag_cloud_args', 'gl_tag_cloud_widget');
 
-
-
 /**
  * Enqueue scripts and styles.
  */
@@ -176,6 +174,7 @@ function ale_add_scripts($hook) {
 add_action('admin_enqueue_scripts', 'ale_add_scripts', 10);
 
 add_image_size( 'slickslider', 1920, 1280, true );
+
 
 /*Page title filters*/
 add_filter( 'document_title_separator', function(){ return ''; } );
